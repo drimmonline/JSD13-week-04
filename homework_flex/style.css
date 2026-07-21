@@ -32,9 +32,9 @@
 }
 .profit-container img {
   width: 40%;
-  height: auto;
+  height: 30%;
   margin: 20px;
-  object-fit: cover;
+
   object-position: center;
   border-radius: 15px;
   box-shadow: 5px 10px #0a4254;
@@ -80,6 +80,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 10px;
+  box-sizing: border-box;
 }
 .card-header p {
   font-size: 10px;
