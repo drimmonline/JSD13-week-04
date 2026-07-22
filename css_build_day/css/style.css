@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #e0ebeb;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  margin: 0;
+}
+.container,
+header,
+nav,
+.hero {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+nav {
+  padding: 1rem 2rem;
+  background-color: #100d0b;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* navbar */
+nav ul {
+  list-style-type: none;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+nav ul > li {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav ul > li a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+/*Hero section*/
+.hero {
+  background:
+    linear-gradient(135deg, rgba(26, 26, 46, 0.85), rgba(22, 33, 62, 0.85)),
+    url("https://assets.minorhotels.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-jewel-bagh-jaipur-hotel/mhg/01_hotel-teaser/anantara_jewel-bagh_jaipur_hotel_teaser_01_880x620.jpg")
+      center/cover no-repeat;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+}
+.hero-content {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+.hero-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #100d0b;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+.hero-btn:hover {
+  background-color: #3d3835;
+}
+
+/*Product Items*/
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+img {
+  width: 40%;
+  height: auto;
+  border-radius: 15px;
+  vertical-align: middle;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 30%;
+  box-sizing: border-box;
+}
+/*card*/
+.card-product {
+  width: 70%;
+  height: 50%;
+}
+.card-product > img {
+  width: 100%;
+  vertical-align: middle;
+}
+.card-product-header {
+  padding: 3px;
+}
+
+.card-product-description {
+  font-size: 15px;
+  color: gray;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.footer .footer-company ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.footer .footer-company ul > li {
+  list-style: none;
+}
+.footer-desc {
+  width: 40%;
+  padding: 10px;
+}
+.footer-tel ul > li {
+  list-style: none;
+}
+.copyright-footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btn-res {
+  background-color: rgb(16, 19, 27);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-auth {
+  background-color: rgb(38, 22, 13);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+/*  ส่วนที่ 2 */
+/*  เงื่อนไขที่1: tablet screen(1200px) --> 901px */
+@media (max-width: 1200px) {
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul > li {
+    flex-direction: column;
+  }
+
+  li a:hover {
+    background-color: #555555;
+    color: white;
+  }
+  .logo {
+    width: 30%;
+    margin-left: 20px;
+    box-sizing: border-box;
+  }
+  .footer-tel {
+    list-style: none;
+  }
+}
+
+/*  เงื่อนไขที่2: mobile landscape screen(900px) --> 601px */
+@media (max-width: 900px) {
+  .item {
+    width: 50%;
+    height: auto;
+  }
+}
+/* เงื่อนไขที่3: mobile screen(76800px) --> 600px */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav > h1 {
+    text-align: center;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  .auth-box {
+    display: flex;
+    justify-content: center;
+  }
+  .auth-box > button {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+/* เงื่อนไขที่4: mobile screen(600px) --> 0px */
+@media (max-width: 600px) {
+  .item {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+  }
+  nav {
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  nav ul > li {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-between;
+  }
+  .footer-company {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .footer-tel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .footer .footer-desc {
+    height: 10%;
+    width: 100%;
+    text-align: start;
+  }
+  .footer-desc > .text-logo {
+    text-align: center;
+  }
+  .footer .footer-tel {
+    margin-top: 10px;
+  }
+}
