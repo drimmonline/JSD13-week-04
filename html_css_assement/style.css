@@ -230,7 +230,9 @@ margin-bottom: 32px;
 .learning-card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
+.oldman{
+    display: none;
+}
 .learning-card img{
     height: auto;
     width: 100%;
@@ -320,10 +322,7 @@ margin:25px 16px;
 
 
 @media (max-width: 1200px) {
- .thesis-page-left{
-    display: flex;
-    justify-content: center;
- }
+
 }
 
 /*  เงื่อนไขที่2: mobile landscape screen(900px) --> 601px */
@@ -338,6 +337,7 @@ margin:25px 16px;
    gap: 20px;
    height: 64px;
    box-sizing: border-box;
+
   }
   .hamburger span > img{
     width: 50px;
@@ -413,6 +413,12 @@ margin:25px 16px;
     width: 50%;
     background-color: #D8D8D8;
  }
+ .learning-card-mobile:hover{
+    background-color: #b3aeae;
+ }
+ .learning-card-mobile h3>a{
+    color: black;
+ }
  .thesis-page-right{
     display: none;
  }
@@ -433,6 +439,15 @@ margin:25px 16px;
 }
 .footer-item-term{
     display: none;
+}
+.information-news> div:nth-child(3) h3 {
+    display: none;
+
+}
+.oldman{
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
 }
  }
 
