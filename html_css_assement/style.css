@@ -268,10 +268,10 @@ margin-bottom: 32px;
 
 }
 
-video{
+/* video{
 height: 480px;
 width:870px;
-}
+} */
 
 .thesis-page-left-text{
     line-height: 1.5;
@@ -456,4 +456,20 @@ margin:25px 16px;
     nav{
     display: hidden;
   }
+  .hero_content button{
+    width: 40%;
+    padding: 15px 25px;
+    border: 1px solid none;
+    background-color: #4A4A4A;
+    color: white;
+    font-size: 15px;
+}
+.information-content {
+    height: 100%;
+
+}
+.infomation-content-news{
+    height: auto;
+}
+   
 }
