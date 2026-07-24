@@ -26,6 +26,9 @@
   display: block;
 
 }
+.mobile-version{
+    display: none;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -42,6 +45,7 @@ nav .nav-logo a{
     justify-content: center;
     width: 50%;
 }
+
 
 nav .nav-logo a> img{
     width: 50px;
@@ -121,6 +125,7 @@ ul li a{
 .information-left{
      overflow: hidden; 
 }
+
 .information-left img{
   width: 94%;
   height: 60%;
@@ -334,6 +339,13 @@ margin:25px 16px;
    height: 64px;
    box-sizing: border-box;
 
+  }
+  .large-version{
+    display: none;
+
+  }
+  .small_version{
+    display: block;
   }
   .hamburger span > img{
     width: 50px;
