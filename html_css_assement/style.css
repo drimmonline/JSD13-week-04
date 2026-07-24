@@ -42,6 +42,7 @@ nav .nav-logo a{
     justify-content: center;
     width: 50%;
 }
+
 nav .nav-logo a> img{
     width: 50px;
     height: auto;
@@ -135,10 +136,9 @@ ul li a{
 .information-left-text p{
     margin-top: 24px;
     font-size: 20px;
-
-  
 }
 .information-left-text p:last-child{
+    margin-top:24px ;
 margin-bottom: 32px;
 }
 .information-right{
@@ -161,21 +161,19 @@ margin-bottom: 32px;
 .information-left-text{
     display: flex;
     flex-direction: column;
-   
+    margin-bottom:32px ;
 }
 .infomation-content-news p{
     margin:8px 0 ;
 }
 .information-left-text p{
     line-height: 1.5;
-    margin: 0px 20px ;
-    padding: 10px 0;
+    margin: 0px 20px  ;
+
 
 }
 .information-news{
-    margin: auto;
     align-self: flex-start;
-    height: 100%;
 }
 .information-content{
     display: flex;
@@ -451,8 +449,12 @@ margin:25px 16px;
 .information-content img{
     object-fit: cover;
     width: 100%;
-}  
+} 
+.information-left-text:last-child{
+    margin-bottom: 32px;
+}
  }
+ 
 
 /* เงื่อนไขที่3: mobile screen(600px) --> 0px */
 @media (max-width: 600px) {
